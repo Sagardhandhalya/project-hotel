@@ -34,7 +34,7 @@ body{
 }
 
 .sidebaroff{
-    margin-left: 6rem;
+    margin-left: 11rem;
     cursor: pointer;
     
 }
@@ -53,20 +53,16 @@ body{
   width: 12.5rem;
   -webkit-transition: all ease 0.1s;
   transition: all ease 0.1s;
-  z-index: 2000;
+
 }
 
 .content {
   width: 100%;
-  margin-left: 12.5rem;
+  margin-left: 14rem;
   -webkit-transition: all ease 0.25s;
   transition: all ease 0.25s;
   
 }
-
-
-
-
 
 .hotel-avatar{
     width: 60%;

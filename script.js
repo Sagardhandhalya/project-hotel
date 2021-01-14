@@ -17,8 +17,8 @@ function opensidebar(){
 function closesidebar(){
 
   sidebar.classList.add('hide')
-  content.style.marginLeft = "4rem";
-  content.style.marginRight = "4rem";
+   content.style.marginLeft = "0rem";
+   content.style.marginRight = "0rem";
   off.classList.add('hide')
  on.classList.remove('hide')
 }

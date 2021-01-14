@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>dashboard -</title>
+    <title>Dashboard </title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
@@ -35,7 +35,6 @@
 
       </div>
 
-        <h4 class="text-center text-white text-bold mr-5 mt-3 ">Hotel Umbrella </h4>
         <div class="p-2 bg-warning mr-5 mt-2 mb-2 rounded-circle"> SD </div>
     </nav>
 
@@ -49,7 +48,7 @@
           <ul class="navbar-nav mt-5">
 
             <li>
-              <img src="./admin.jpeg" class="rounded-circle d-block img-thumbnail mx-auto mb-3 hotel-avatar" alt="image" >       
+              <img src="./admin.png" class="rounded-circle d-block img-thumbnail mx-auto mb-3 hotel-avatar" alt="image" >       
             </li>
             <li class="nav-item bg-light">
               <a href="./dashboard.html" class="nav-link px-2">
@@ -69,76 +68,72 @@
                 <span class="text-dark nav-link-text">Add Family</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link px-2">
-                <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-person-plus-fill nav-link-svg" viewBox="0 0 16 16">
-                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-                  </svg>
-                <span class="text-dark nav-link-text">Login Page</span>
-              </a>
-            </li>
+            
           </ul>
         </div>
       </div>
 
       <!-- main content  -->
 
-      <div class="content d-flex justify-content-center mt-5 flex-wrap ">
+      <div class="content container mt-5" style="overflow-x:auto;">
         <!-- <div class="bg-primary shadow w-100" style="height: 300px;"> </div> -->
         
-        <table class="table table-striped w-75 bg-light">
+        <table class="table table-striped bg-light "  >
 
           <thead class="thead-dark">
             <tr>
               <th>SR No.</th>
               <th>Name</th>
               <th>Room No</th>
-              <th>Status</th>
+              <th>Checked In Date</th>
+              <th>Checked out Date</th>
+              
               <th>Actions</th>
               <htr>
           </thead>
           <tbody>
              
+ 
+              <tr>
+                <th scope="row">1</th>
+                <td>Dhandhalya Sagar</td>
+                <td>423</td>
+                <td>21-1-2021</td>
+                <td>-</td>
+                <td>
+                <span class="badge badge-primary">Edit</span>
+                <span class="badge badge-danger">Delete </span>
+              </td>
+              </tr>
 
               <tr>
                 <th scope="row">1</th>
-              <td>Sagar Dineshbhai Dhandhalya</td>
-              <td>423</td>
-              <td> Up </td>
-              <td>
+                <td>samir pandya
+                </td>
+                <td>403</td>
+                <td>14-1-2021</td>
+                <td>-</td>
+                <td>
                 <span class="badge badge-primary">Edit</span>
                 <span class="badge badge-danger">Delete </span>
-
-
               </td>
               </tr>
 
               <tr>
-                <th scope="row">2</th>
-              <td>Sagar Dineshbhai Dhandhalya</td>
-              <td>423</td>
-              <td> Up </td>
-              <td>
+                <th scope="row">1</th>
+                <td>Sanket Bhavan</td>
+                <td>412</td>
+                <td>30-1-2021</td>
+                <td>-</td>
+                <td>
                 <span class="badge badge-primary">Edit</span>
                 <span class="badge badge-danger">Delete </span>
-
-
               </td>
               </tr>
-
-              <tr>
-                <th scope="row">3</th>
-              <td>Sagar Dineshbhai Dhandhalya</td>
-              <td>423</td>
-              <td> Up </td>
-              <td>
-                <span class="badge badge-primary">Edit</span>
-                <span class="badge badge-danger">Delete </span>
+               
 
 
-              </td>
-              </tr>
+
           </tbody>
       </table>
       </div>
