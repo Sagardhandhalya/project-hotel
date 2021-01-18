@@ -5,7 +5,7 @@ const on = document.querySelector('.sidebaron');
 const content = document.querySelector('.content')
 function opensidebar(){
 
-  console.log(content);
+
   sidebar.classList.remove('hide')
   content.style.marginLeft = "14rem";
   content.style.marginRight = "0rem";
