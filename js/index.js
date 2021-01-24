@@ -17,6 +17,7 @@ function show_error(errors) {
     let error_text = `<ul> ${error_lis} </ul>`;
     error_container.innerHTML = error_text;
     return false;
+
   }
 
 
@@ -30,10 +31,26 @@ function show_error(errors) {
 
 
 }
+
+
+var form = document.getElementById("login_form");
+function submit(event) 
+{
+  
+  event.preventDefault(); 
+  document.getElementById('email').value = '';
+  document.getElementById('password').value = '';
+  window.location.href = 'http://127.0.0.1:5501/html/dashboard.html'
+
+} 
+form.addEventListener('submit', submit);
+
+
 function validate_email(e) {
   let value = e.value;
   console.log(value);
-  if (value === EMAIL && value != '') {
+  var re = /\S+@\S+\.\S+/;
+  if (value != '' && value.match(re) &&  value === EMAIL){
     makevalid(e)
 
     is_email_validated = true;
@@ -43,6 +60,8 @@ function validate_email(e) {
     makeinvalid(e)
     is_email_validated = false;
   }
+
+  Toggle_login_button();
 }
 
 function validate_password(e) {
@@ -55,9 +74,7 @@ function validate_password(e) {
 
     is_password_validated = true;
 
-    if (is_email_validated && is_password_validated) {
-      document.getElementById('submit_button').disabled = false;
-    }
+   
   }
   else {
     if (value.length < 8) {
@@ -70,6 +87,21 @@ function validate_password(e) {
     is_password_validated = false;
 
   }
+
+  Toggle_login_button();
+}
+
+
+function Toggle_login_button(){
+
+  console.log(is_email_validated , is_password_validated );
+
+  if (is_email_validated && is_password_validated) {
+    document.getElementById('submit_button').disabled = false;
+  }
+  else{
+    document.getElementById('submit_button').disabled = true;
+  }
 }
 
 function makevalid(e) {
@@ -81,3 +113,4 @@ function makeinvalid(e) {
   e.classList.remove('is-valid')
   e.classList.add('is-invalid')
 }
+

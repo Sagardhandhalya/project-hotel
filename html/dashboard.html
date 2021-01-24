@@ -12,9 +12,7 @@
       integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y="
       crossorigin="anonymous"
     />
-
-   
-    <link rel="stylesheet" href="./custom.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
 
   </head>
 
@@ -32,8 +30,17 @@
         </svg>
 
       </div>
-
-      <a href="index.html" class="p-2 bg-warning mr-5 mt-2 mb-2 rounded-circle text-decoration-none text-dark"> SD </a>
+      <div class="dropdown">
+        <button class="btn p-2 bg-warning mr-5 mt-2 mb-2 rounded-circle text-decoration-none text-dark" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          SD
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="index.html" >Logout</a>
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Settings</a>
+        </div>
+      </div>
+      <!-- <a  class="p-2 bg-warning mr-5 mt-2 mb-2 rounded-circle text-decoration-none text-dark"> SD </a> -->
     </nav>
 
     <!-- wrapper  -->
@@ -46,7 +53,7 @@
           <ul class="navbar-nav mt-5">
 
             <li>
-              <img src="./admin.png" class="rounded-circle d-block img-thumbnail mx-auto mb-3 hotel-avatar" alt="image" >       
+              <img src="../assets/admin.png" class="rounded-circle d-block img-thumbnail mx-auto mb-3 hotel-avatar" alt="image" >       
             </li>
             <li class="nav-item bg-light mb-2">
               <a href="./dashboard.html" class="nav-link px-2">
@@ -162,6 +169,6 @@
       crossorigin="anonymous"
     ></script>
     
-    <script src="./script.js"></script>
+    <script src="../js/sidebar.js"></script>
   </body>
 </html>
